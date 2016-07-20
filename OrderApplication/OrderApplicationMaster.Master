@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="OrderApplicationMaster.master.cs"
+    Inherits="OrderApplication.OrderApplicationMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="../Scripts/Jquery/js/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="../Scripts/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="../Scripts/CosmoStrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="../Scripts/JasnyBootstrap/js/jasny-bootstrap.js" type="text/javascript"></script>
+    <script src="../Scripts/JasnyBootstrap/js/bootstrap-fileupload.js" type="text/javascript"></script>
+    <script src="../Scripts/bootbox.js" type="text/javascript"></script>
+    <link href="Scripts/JasnyBootstrap/css/jasny-bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="Scripts/JasnyBootstrap/css/jasny-bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="Scripts/CosmoStrap/css/cosmo_bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="Scripts/CosmoStrap/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .accordion
+        {
+            width: 100%;
+        }
+        
+        .accordionHeader
+        {
+            border: 1px solid #2F4F4F;
+            color: white;
+            background-color: #2E4d7B;
+            font-family: Arial, Sans-Serif;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        
+        .accordionHeaderSelected
+        {
+            border: 1px solid #2F4F4F;
+            color: white;
+            background-color: #5078B3;
+            font-family: Arial, Sans-Serif;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+        .ui-state-active
+        {
+            display: none;
+        }
+        .accordionContent
+        {
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="form1" runat="server" autocomplete="off">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>  
+
+     <div> 
+        <div id="orderappHeader">
+            <div class="container" style="margin-left: 100px;">
+                <div class="row-fluid" style="margin-left: 10px;"> 
+                    <h2>
+                        OrderLinc
+                    </h2>
+                </div>
+            </div>           
+            <div class="container" style="margin-left: 100px;">
+                <div class="navbar" style="width: 100%; text-align: center">
+                    <div class="navbar-inner" style="background-image: -moz-linear-gradient(top, #FFFFFF 0%, #E0E0E0 100%);
+                        height: 50px; background-color: transparent;">
+                        <div class="container">
+                            <ul id="main" class="nav pull-left">
+                                <li style="display: none"><a href='<%=ResolveUrl("~/Dashboard.aspx")%>'>
+                                    <asp:Label ID="Label1" runat="server" Text="Dashboard" ForeColor="Black"></asp:Label></a></li>
+                                <li id="ManageOrders" runat="server"><a href='<%=ResolveUrl("~/Orders/ManageOrder.aspx")%>'>
+                                    <asp:Label ID="Label2" runat="server" Text="Orders" ForeColor="Black"></asp:Label></a></li>
+                                <li id="ManageUsers" runat="server"><a href='<%=ResolveUrl("~/UsersAcces/ManageUsers.aspx")%>'>
+                                    <asp:Label ID="Label3" runat="server" Text="Manage Users" ForeColor="Black"></asp:Label></a></li>
+                                <li id="ViewProducts" runat="server" visible="false"><a href='<%=ResolveUrl("~/ProductCatalogs/ViewProducts.aspx")%>'>
+                                    <asp:Label ID="Label4" runat="server" Text="Manage Products" ForeColor="Black"></asp:Label></a></li>
+                                <li id="ManageOrganizations" runat="server" visible="true"><a href='<%=ResolveUrl("~/Organizations/ViewOrganizations.aspx")%>'>
+                                    <asp:Label ID="Label6" runat="server" Text="Manage Customers" ForeColor="Black"></asp:Label></a>
+                                </li>
+                                <li id="liReports" runat="server"><a href='<%=ResolveUrl("~/Reports/Report.aspx")%>'>
+                                    <asp:Label ID="Label7" runat="server" Text="Reports" ForeColor="Black"></asp:Label></a>
+                                </li>
+                                <li>
+                                    <asp:LinkButton ID="lnkBtnLogOut" runat="server" OnClick="lnkBtnLogOut_Click">
+                                        <asp:Label ID="Label5" runat="server" Text="Log Out" ForeColor="Black"></asp:Label></asp:LinkButton>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="orderappBody">
+            <div class="container" style="margin-left: 100px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div id="orderappFooter">
+        </div>
+    </div>
+
+    <div class="navbar navbar-fixed-bottom" style="height: 20px">
+        <div class="container">
+            <div class="navbar-inner" style="background-color: #DEDEDE">
+                <div class="content">
+                    <div class="row-fluid" style="width: 100%; line-height: 20px; text-align: right">
+                        <asp:Label ID="lblVersion" runat="server" Text="2.3" Style="vertical-align: middle"
+                            Font-Size="Small"></asp:Label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

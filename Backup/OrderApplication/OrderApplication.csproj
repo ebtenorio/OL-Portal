@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E86CE9D6-80F8-4DD3-8B30-23AEF7E4D987}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OrderApplication</RootNamespace>
+    <AssemblyName>OrderApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="OrderLincLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\OrderLincLib\OrderLincLib\bin\Release\OrderLincLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PLPersistenceServices, Version=3.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Binaries\PLPersistenceServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ErrorPages\ErrorPage.aspx" />
+    <Content Include="LogIn.aspx" />
+    <Content Include="PageEvent.aspx" />
+    <Content Include="Reports\Log.aspx" />
+    <Content Include="Reports\Report.aspx" />
+    <Content Include="Resources\Images\7.jpg" />
+    <Content Include="Resources\Images\about-26.png" />
+    <Content Include="Resources\Images\agilitilinc_logo.png" />
+    <Content Include="Resources\Images\csv.jpg" />
+    <Content Include="Resources\Images\delete-26.png" />
+    <Content Include="Resources\Images\edit-26.png" />
+    <Content Include="Resources\Images\list-26.png" />
+    <Content Include="Resources\Images\loading.gif" />
+    <Content Include="Resources\Images\minus2-26.png" />
+    <Content Include="Resources\Images\plus2-26.png" />
+    <Content Include="Resources\Images\redo.png" />
+    <Content Include="Resources\Images\upload-26.png" />
+    <Content Include="Scripts\bootbox.js" />
+    <Content Include="Scripts\bootstrap-datepicker.js" />
+    <Content Include="Scripts\CosmoStrap\css\bootstrap-responsive.css" />
+    <Content Include="Scripts\CosmoStrap\css\bootstrap-responsive.min.css" />
+    <Content Include="Scripts\CosmoStrap\css\cosmo_bootstrap.css" />
+    <Content Include="Scripts\CosmoStrap\css\cosmo_bootstrap.min.css" />
+    <Content Include="Scripts\CosmoStrap\img\glyphicons-halflings-white.png" />
+    <Content Include="Scripts\CosmoStrap\img\glyphicons-halflings.png" />
+    <Content Include="Scripts\CosmoStrap\js\bootstrap.js" />
+    <Content Include="Scripts\CosmoStrap\js\bootstrap.min.js" />
+    <Content Include="Scripts\JasnyBootstrap\css\jasny-bootstrap-responsive.css" />
+    <Content Include="Scripts\JasnyBootstrap\css\jasny-bootstrap-responsive.min.css" />
+    <Content Include="Scripts\JasnyBootstrap\css\jasny-bootstrap.css" />
+    <Content Include="Scripts\JasnyBootstrap\css\jasny-bootstrap.min.css" />
+    <Content Include="Scripts\JasnyBootstrap\fonts\iconic_fill.svg" />
+    <Content Include="Scripts\JasnyBootstrap\fonts\iconic_stroke.svg" />
+    <Content Include="Scripts\JasnyBootstrap\js\bootstrap-fileupload.js" />
+    <Content Include="Scripts\JasnyBootstrap\js\bootstrap-inputmask.js" />
+    <Content Include="Scripts\JasnyBootstrap\js\bootstrap-rowlink.js" />
+    <Content Include="Scripts\JasnyBootstrap\js\jasny-bootstrap.js" />
+    <Content Include="Scripts\JasnyBootstrap\js\jasny-bootstrap.min.js" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\jquery-ui-1.9.2.custom.css" />
+    <Content Include="Scripts\Jquery\css\ui-lightness\jquery-ui-1.9.2.custom.min.css" />
+    <Content Include="Scripts\Jquery\js\jquery-1.8.3.js" />
+    <Content Include="Scripts\Jquery\js\jquery-ui-1.9.2.custom.js" />
+    <Content Include="Scripts\Jquery\js\jquery-ui-1.9.2.custom.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="AnotherDefault.aspx" />
+    <Content Include="UsersAcces\ManageUsers.aspx" />
+    <Content Include="UsersAcces\UsersForm.aspx" />
+    <Content Include="ProductCatalogs\ViewProducts.aspx" />
+    <Content Include="ProductCatalogs\ViewProductCatalogs.aspx" />
+    <Content Include="Organizations\ViewOrganizations.aspx" />
+    <Content Include="Orders\ManageOrder.aspx" />
+    <Content Include="Dashboard.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ErrorPages\ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderApplicationMaster.Master.cs">
+      <DependentUpon>OrderApplicationMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderApplicationMaster.Master.designer.cs">
+      <DependentUpon>OrderApplicationMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PageEvent.aspx.cs">
+      <DependentUpon>PageEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageEvent.aspx.designer.cs">
+      <DependentUpon>PageEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AnotherDefault.aspx.cs">
+      <DependentUpon>AnotherDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnotherDefault.aspx.designer.cs">
+      <DependentUpon>AnotherDefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Log.aspx.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Log.aspx.designer.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersAcces\ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersAcces\ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UsersAcces\UsersForm.aspx.cs">
+      <DependentUpon>UsersForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UsersAcces\UsersForm.aspx.designer.cs">
+      <DependentUpon>UsersForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCatalogs\ViewProducts.aspx.cs">
+      <DependentUpon>ViewProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductCatalogs\ViewProducts.aspx.designer.cs">
+      <DependentUpon>ViewProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductCatalogs\ViewProductCatalogs.aspx.cs">
+      <DependentUpon>ViewProductCatalogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductCatalogs\ViewProductCatalogs.aspx.designer.cs">
+      <DependentUpon>ViewProductCatalogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Organizations\ViewOrganizations.aspx.cs">
+      <DependentUpon>ViewOrganizations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Organizations\ViewOrganizations.aspx.designer.cs">
+      <DependentUpon>ViewOrganizations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Orders\ManageOrder.aspx.cs">
+      <DependentUpon>ManageOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Orders\ManageOrder.aspx.designer.cs">
+      <DependentUpon>ManageOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OrderApplicationMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\LocalPub.pubxml" />
+    <None Include="Scripts\JasnyBootstrap\fonts\iconic_fill.eot" />
+    <None Include="Scripts\JasnyBootstrap\fonts\iconic_fill.otf" />
+    <None Include="Scripts\JasnyBootstrap\fonts\iconic_fill.ttf" />
+    <None Include="Scripts\JasnyBootstrap\fonts\iconic_fill.woff" />
+    <None Include="Scripts\JasnyBootstrap\fonts\iconic_stroke.eot" />
+    <None Include="Scripts\JasnyBootstrap\fonts\iconic_stroke.otf" />
+    <None Include="Scripts\JasnyBootstrap\fonts\iconic_stroke.ttf" />
+    <None Include="Scripts\JasnyBootstrap\fonts\iconic_stroke.woff" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57256</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <UserProperties BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_ConfigurationName="Release" BuildVersion_BuildAction="Build" BuildVersion_BuildVersioningStyle="None.None.Increment.None" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

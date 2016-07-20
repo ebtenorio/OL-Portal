@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OrderApplicationSetUp", "OrderApplicationSetUp.vdproj", "{86FA34BF-2808-4266-BF18-CDA843F15781}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86FA34BF-2808-4266-BF18-CDA843F15781}.Debug|Default.ActiveCfg = Debug
+		{86FA34BF-2808-4266-BF18-CDA843F15781}.Debug|Default.Build.0 = Debug
+		{86FA34BF-2808-4266-BF18-CDA843F15781}.Release|Default.ActiveCfg = Release
+		{86FA34BF-2808-4266-BF18-CDA843F15781}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
